@@ -1,0 +1,37 @@
+{
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {"type": "int32", "optional": false, "field": "id_cidade"},
+      {"type": "string", "optional": true, "field": "nome_cidade"},
+      {"type": "double", "optional": true, "field": "tx_desemprego"},
+      {"type": "string", "optional": true, "field": "timestamp"}
+    ],
+    "optional": false,
+    "name": "unemployment_data"
+  },
+  "payload": {
+    "op": "c",
+    "before": null,
+    "after": {
+      "id_cidade": 3304557,
+      "nome_cidade": "Rio de Janeiro", 
+      "tx_desemprego": 5.9,
+      "timestamp": "2025-01-22 08:43:00"
+    },
+    "source": {
+      "version": "1.8.0.Final",
+      "connector": "postgres",
+      "name": "unemployment_tracker",
+      "ts_ms": 1706008980000,
+      "snapshot": "false",
+      "db": "unemployment_db",
+      "schema": "public",
+      "table": "city_unemployment",
+      "txId": 5679,
+      "lsn": 123457,
+      "xmin": null
+    },
+    "transaction": null
+  }
+}
